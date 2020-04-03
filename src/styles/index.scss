@@ -2,6 +2,8 @@
 
 $primary-color: #e7ba2f;
 $white: #fff;
+$light-grey: #efefef;
+$dark-grey: #666;
 
 .title-website {
 	font-size: 60px;
@@ -16,13 +18,14 @@ $white: #fff;
 
 .layout-sidebar {
 	display: flex;
+	margin-top: 40px;
 
 	.main-content {
-		flex: 6;
+		width: 100%;
 	}
 
 	.sidebar {
-		flex: 3;
+		width: 340px;
 	}
 }
 
@@ -35,7 +38,6 @@ $white: #fff;
 	align-items: center;
 	justify-content: center;
 	position: relative;
-
 
 	.slider {
 		width: 1400px;
@@ -98,5 +100,44 @@ $white: #fff;
     &.active {
     	background-color: $primary-color;
     }
+	}
+}
+
+.sidebar {
+	.sidebar-container {
+		background-color: $light-grey;
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+		align-items: stretch;
+	}
+
+	.banner-1 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $white;
+		height: 300px;
+		width: 300px;
+	}
+
+	.dummy-banner-container {
+		&>div {
+			margin: 15px auto;
+		}
+
+		&>:last-child {
+			margin: 15px auto 0;
+		}
+	}
+
+	.dummy-banner {
+		width: 300px;
+		height: 100px;
+		background-color: $dark-grey;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $white;
 	}
 }

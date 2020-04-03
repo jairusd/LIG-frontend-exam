@@ -1,7 +1,8 @@
 import React from 'react'
-import {Header, Slider} from './sections'
+import {
+  Header, Slider, SideBar, MainContent
+} from './sections'
 import FooterNavigation from './FooterNavigation'
-import Posts from './Posts'
 
 export default function Layout() {
   return (
@@ -12,12 +13,8 @@ export default function Layout() {
       </section>
 
       <div className="container layout-sidebar">
-        <section className="main-content">
-          <Posts />
-        </section>
-        <section className="sidebar">
-          test
-        </section>
+        <MainContent />
+        <SideBar />
       </div>
 
       <section className="footer">
