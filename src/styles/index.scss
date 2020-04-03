@@ -1,0 +1,53 @@
+@import './normalize.scss';
+
+$primary-color: #e7ba2f;
+$white: #fff;
+
+.title {
+	font-size: 60px;
+	text-align: center;
+	margin: 30px 0;
+}
+
+.container {
+	width: 1080px;
+	margin: auto;
+}
+
+.layout-sidebar {
+	display: flex;
+
+	.main-content {
+		flex: 6;
+	}
+
+	.sidebar {
+		flex: 3;
+	}
+}
+
+.section__header {
+	border-top: 5px solid $primary-color;
+}
+
+.section__slider {
+	color: $white;
+
+	.slider {
+		height: 420px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.bg--cat {
+		background-image: url('../img/cat.jpg');
+	}
+
+	.bg--mountain {
+		background-image: url('../img/mountain.jpg');
+	}
+
+	.bg--beach {
+		background-image: url('../img/beach.jpg');
+	}
+}
