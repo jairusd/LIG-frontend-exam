@@ -4,6 +4,7 @@ $primary-color: #e7ba2f;
 $white: #fff;
 $light-grey: #efefef;
 $dark-grey: #666;
+$mid-grey: #999;
 
 .title-website {
 	font-size: 60px;
@@ -139,5 +140,29 @@ $dark-grey: #666;
 		align-items: center;
 		justify-content: center;
 		color: $white;
+	}
+
+	.recommended {
+		display: flex;
+		margin-bottom: 20px;
+
+		.article-img {
+			width: 115px;
+			height: 65px;
+			margin-right: 10px;
+		}
+
+		.title {
+	    word-break: break-all;
+	    font-weight: bold;
+	    font-size: 13px;
+	    margin: 0 auto 10px;
+		}
+
+		.date {
+			color: $mid-grey;
+			font-size: 12px;
+			margin: 0;
+		}
 	}
 }
