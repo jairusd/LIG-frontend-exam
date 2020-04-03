@@ -43,7 +43,7 @@ $white: #fff;
 		background-position: center;
 		background-repeat: no-repeat;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 	}
 
@@ -68,6 +68,12 @@ $white: #fff;
 		background: none;
 	}
 
+	.slider-content-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
 	.slider-content {
 		text-align: center;
 		color: $white;
@@ -88,5 +94,9 @@ $white: #fff;
     background-color: $white;
     border-radius: 50%;
     margin: 5px;
+
+    &.active {
+    	background-color: $primary-color;
+    }
 	}
 }
