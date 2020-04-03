@@ -24,7 +24,7 @@ body {
 
 .layout-sidebar {
 	display: flex;
-	margin-top: 40px;
+	margin: 40px auto 20px;
 
 	.main-content {
 		width: 100%;
@@ -179,7 +179,7 @@ body {
 
 .main-content {
 	padding-right: 15px;
-	
+
 	.post {
 		display: flex;
 		margin-bottom: 40px;
@@ -205,3 +205,41 @@ body {
 		}
 	}
 }
+
+.footer {
+	background-color: $black;
+	color: $white;
+
+	.footer-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.footer-links {
+		list-style-type: none;
+		margin: 0;
+		display: flex;
+
+		a:visited,
+		a:link {
+			color: $white;
+			margin-right: 20px;
+		}
+	}
+}
+
+.go-to-top-container {
+	display: flex;
+	justify-content: flex-end;
+
+	.go-to-top {
+		background: none;
+		border: 0;
+		width: 40px;
+		height: 40px;
+		display: block;
+		cursor: pointer;
+	}
+}
+

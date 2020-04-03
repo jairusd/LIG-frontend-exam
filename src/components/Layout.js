@@ -2,7 +2,8 @@ import React from 'react'
 import {
   Header, Slider, SideBar, MainContent
 } from './sections'
-import FooterNavigation from './FooterNavigation'
+import Footer from './Footer'
+import ArrowTop from './ArrowTop'
 
 export default function Layout() {
   return (
@@ -17,8 +18,10 @@ export default function Layout() {
         <SideBar />
       </div>
 
+      <ArrowTop />
+
       <section className="footer">
-        <FooterNavigation />
+        <Footer />
       </section>
     </>
   )
