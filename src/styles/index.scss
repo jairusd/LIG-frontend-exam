@@ -2,9 +2,14 @@
 
 $primary-color: #e7ba2f;
 $white: #fff;
+$black: #000;
 $light-grey: #efefef;
 $dark-grey: #666;
 $mid-grey: #999;
+
+body {
+	font-size: 16px;
+}
 
 .title-website {
 	font-size: 60px;
@@ -142,6 +147,11 @@ $mid-grey: #999;
 		color: $white;
 	}
 
+	.title-recommended {
+			text-align: center;
+			border-bottom: 2px solid $black;
+		}
+
 	.recommended {
 		display: flex;
 		margin-bottom: 20px;
@@ -163,6 +173,35 @@ $mid-grey: #999;
 			color: $mid-grey;
 			font-size: 12px;
 			margin: 0;
+		}
+	}
+}
+
+.main-content {
+	padding-right: 15px;
+	
+	.post {
+		display: flex;
+		margin-bottom: 40px;
+
+		.post-content {
+			padding: 0 10px;
+		}
+
+		.post-date {
+			color: $dark-grey;
+			font-size: 13px;
+			margin: 0 auto 10px;
+		}
+
+		.post-title {
+			margin: 0 auto 10px;
+			font-size: 18px;
+		}
+
+		.post-text {
+			margin: 0 auto 10px;
+			font-size: 13px;
 		}
 	}
 }
