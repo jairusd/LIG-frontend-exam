@@ -4,6 +4,7 @@ $primary-color: #e7ba2f;
 $white: #fff;
 $black: #000;
 $light-grey: #efefef;
+$neutral-grey: #333;
 $dark-grey: #666;
 $mid-grey: #999;
 
@@ -198,6 +199,18 @@ body {
 .main-content {
 	padding-right: 15px;
 
+	.posts-container {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.posts {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+	}
+
 	.post {
 		display: flex;
 		margin-bottom: 40px;
@@ -228,6 +241,26 @@ body {
 		.post-text {
 			margin: 0 auto 10px;
 			font-size: 13px;
+		}
+	}
+
+	.show-more {
+		background-color: $neutral-grey;
+		border: 0;
+		color: $white;
+		font-size: 20px;
+		padding: 10px;
+		cursor: pointer;
+		width: 400px;
+		align-self: center;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.button-arrow {
+			position: absolute;
+			right: 10px;
 		}
 	}
 }
